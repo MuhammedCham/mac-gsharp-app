@@ -1,4 +1,4 @@
-import {navlink} from "../constants"
+import { navLinks } from "../constants"
 
 const NavBar = () => {
     return (
@@ -7,7 +7,7 @@ const NavBar = () => {
                 <img src="/logo.svg" alt="Apple logo" />
 
                 <ul>
-                    {navlink.map(({ label }) => (
+                    {navLinks.map(({ label }) => (
                         <li key={label}>
                             <a href={label}>{label}</a>
                         </li>
@@ -15,9 +15,9 @@ const NavBar = () => {
                 </ul>
 
                 <div className="flex-center gap-3">
-                    <botton>
+                    <button>
                         <img src="/search.svg" alt="search" />
-                    </botton>
+                    </button>
                     <button>
                         <img src="/cart.svg" alt="cart" />
                     </button>
